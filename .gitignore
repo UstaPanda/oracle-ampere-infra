@@ -1,0 +1,15 @@
+# Environment and local configs
+.env
+*.local
+
+# System and editor artifacts
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# Logs and runtime
+*.log
+/tmp/

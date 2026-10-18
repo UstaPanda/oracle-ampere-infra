@@ -1,0 +1,25 @@
+services:
+  panel:
+    image: ghcr.io/pelican-dev/panel:latest
+    restart: always
+    ports:
+      - "${PANEL_PORT:-8080}:80"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - pelican-data:/pelican-data
+      - pelican-logs:/var/www/html/storage/logs
+    environment:
+      XDG_DATA_HOME: /pelican-data
+      APP_URL: "${PANEL_APP_URL:-http://198.51.100.10:8080}"
+      ADMIN_EMAIL: "${PANEL_ADMIN_EMAIL:-admin@admin.local}"
+
+volumes:
+  pelican-data:
+  pelican-logs:
+
+networks:
+  default:
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
