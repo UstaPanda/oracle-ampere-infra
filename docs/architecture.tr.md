@@ -103,7 +103,7 @@ Sistem birbirinden bağımsız servislerden oluşan bir yönetim mimarisi kullan
 Hem Portainer hem de Wings servisleri `/var/run/docker.sock` soketine ihtiyaç duyar. Soket erişimi ana makinede root yetkisine denk olduğu için oyun sunucusu gibi kullanıcı iş yükleri sokete asla dokunamaz. Onlar cgroup sınırları altındaki izole çocuk konteynerler olarak çalışır.
 
 ![Portainer Konteyner Topolojisi](assets/portainer-container-stack.png)
-*Şekil: Konteyner yığınları arasındaki izole ağ köprülerini gösteren Portainer arayüzü.*
+*Şekil: Konteyner listesini gösteren Portainer arayüzü.*
 
 ### 4.2 Konteyner Bellek Bütçesi ve cgroup Muhasebesi
 Oyun sunucusu konteynerinin ana makine belleğini tüketmesini veya disk takasına (swap) girmesini önlemek için 12 GB fiziksel RAM'i katı çalışma sınırlarına böldüm:

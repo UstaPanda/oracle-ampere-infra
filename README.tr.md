@@ -63,10 +63,10 @@ flowchart TD
 | ![OCI Hesaplama Sunucusu](docs/assets/oci-compute-instance.png) | ![Pelican Panel Göstergesi](docs/assets/pelican-panel-dashboard.png) |
 | *Frankfurt bölgesinde 2 OCPU ve 12 GB RAM ile çalışan Ampere A1 makinesi* | *Pelican paneli üzerinde aktif ve hazırda bekleyen konteyner çalışma zamanları* |
 
-| Süreç Telemetrisi ve 48 Günlük Çalışma Süresi | Portainer Konteyner Ağ Topolojisi |
+| Süreç Telemetrisi ve 48 Günlük Çalışma Süresi | Portainer Konteyner Listesi |
 | :---: | :---: |
 | ![Süreç Telemetrisi](docs/assets/htop-system-telemetry.png) | ![Portainer Konteyner Topolojisi](docs/assets/portainer-container-stack.png) |
-| *htop ekranında 48 günlük kesintisiz çalışma, 6.55G bellek yükü ve düşük CPU dalgalanması* | *İzole edilmiş IP köprülerini gösteren konteyner ağ yerleşimi (172.18 ile 172.20)* |
+| *htop ekranında 48 günlük kesintisiz çalışma, 6.55G bellek yükü ve düşük CPU dalgalanması* | *Konteyner detaylarını gösteren Portainer örneği* |
 
 | Konteyner Kaynak ve Bellek Limitleri |
 | :---: |

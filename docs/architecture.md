@@ -103,7 +103,7 @@ The system uses a decoupled container orchestration setup:
 Both Portainer and Wings need access to `/var/run/docker.sock`. Because socket access is root equivalent on the host, game server workloads never touch the socket. They execute as unprivileged child containers bounded by strict cgroup limits.
 
 ![Portainer Container Topology](assets/portainer-container-stack.png)
-*Figure: Portainer interface showing the isolated bridge networks across container stacks.*
+*Figure: Portainer interface showing the container stacks.*
 
 ### 4.2 Container Memory Budget and cgroup Accounting
 To prevent the game server container from exhausting host memory or triggering disk swap, I divided the 12 GB physical RAM into strict boundaries:

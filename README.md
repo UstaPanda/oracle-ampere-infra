@@ -63,10 +63,10 @@ flowchart TD
 | ![OCI Compute Host](docs/assets/oci-compute-instance.png) | ![Pelican Panel Dashboard](docs/assets/pelican-panel-dashboard.png) |
 | *Ampere A1 instance with 2 OCPUs and 12 GB RAM in Frankfurt* | *Pelican panel managing active and standby container runtimes* |
 
-| Host Process Telemetry and 48 Day Uptime | Portainer Container Network Topology |
+| Host Process Telemetry and 48 Day Uptime | Portainer Dashboard |
 | :---: | :---: |
 | ![Host Process Telemetry](docs/assets/htop-system-telemetry.png) | ![Portainer Container Topology](docs/assets/portainer-container-stack.png) |
-| *htop showing 48 days uptime, 6.55G memory load, and low CPU jitter* | *Container network layout showing isolated IP bridges (172.18 to 172.20)* |
+| *htop showing 48 days uptime, 6.55G memory load, and low CPU jitter* | *Portainer instance showing container details* |
 
 | Container Resource and Memory Limits |
 | :---: |
